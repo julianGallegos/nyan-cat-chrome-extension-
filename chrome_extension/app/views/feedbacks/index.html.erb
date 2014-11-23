@@ -1,0 +1,17 @@
+<h1>Feedback Received</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Text</th>
+  </tr>
+
+  <% @feedbacks.each do |feedback| %>
+    <tr>
+      <td><%= feedback.name %></td>
+      <td><%= feedback.email %></td>
+      <td><%= feedback.content %></td>
+
+    </tr>
+  <% end %>
+</table>

@@ -1,6 +1,6 @@
-<h1> Add Feedback here </h1>
+<h1> Please feel free to leave your feedback here. </h1>
 
-<%= form_for :feedback do |f| %>
+<%= form_for @feedback do |f| %>
   <p>
     <%= f.label :name %><br>
     <%= f.text_field :name %>
@@ -12,11 +12,13 @@
   </p>
 
   <p>
-    <%= f.label :text %><br>
-    <%= f.text_area :text %>
+    <%= f.label :Suggestion %><br>
+    <%= f.text_area :content %>
   </p>
 
   <p>
     <%= f.submit %>
   </p>
 <% end %>
+
+
